@@ -1,4 +1,4 @@
 class SeekerSkill < ApplicationRecord
-    belongs_to :seeker
-    belongs_to :skill
+    belongs_to :seeker, optional: true
+    belongs_to :skill, optional: true
 end
