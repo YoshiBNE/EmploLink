@@ -1,4 +1,4 @@
 class Link < ApplicationRecord
-  belongs_to :seeker
-  belongs_to :employer
+  belongs_to :seeker, optional: true
+  belongs_to :employer, optional: true
 end
