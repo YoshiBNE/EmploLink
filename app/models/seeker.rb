@@ -5,5 +5,5 @@ class Seeker < ApplicationRecord
     validates :last_name, presence: true
     validates :age, numericality: { only_integer: true }, numericality: { in: 18..80 }
     validates :email, presence: true, uniqueness: true
-    validates :phone, numericality: { only_integer: true }, uniqueness: true, length: { is:10 }
+    validates :phone, uniqueness: true, length: { is:10 }
 end

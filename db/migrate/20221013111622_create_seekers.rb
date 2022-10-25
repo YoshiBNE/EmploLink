@@ -1,10 +1,11 @@
 class CreateSeekers < ActiveRecord::Migration[6.1]
   def change
     create_table :seekers do |t|
-      t.string :name
+      t.string :first_name
+      t.string :last_name
       t.integer :age
       t.string :email
-      t.integer :phone
+      t.string :phone
       t.string :gender
 
       t.timestamps
